@@ -64,11 +64,38 @@ pre{
 
 #flappy-bird{
   width: 150px;
-  float: right;
-  image-orientation: center;
+float: right;
   margin: 47px 225px 10px 30px;
 }
 
+#js{
+  width: 700px;
+  float:right;
+  margin: 0px 20px 40px 20px;
+}
+
+#js-bottom{
+  width: 750px;
+  float: left;
+  margin: 10px 20px 40px 70px;
+}
+
+#task02{
+  width: 750px;
+  float: left;
+  margin: 10px 20px 40px 70px;
+}
+
+#html{
+  width: 700px;
+  float: right;
+  margin: 0px 20px 90px 70px;
+}
+
+#t03{
+  width: 750px;
+  margin: 0px 20px 150px 70px;
+}
 
 
 img{
