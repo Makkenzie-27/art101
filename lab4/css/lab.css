@@ -71,13 +71,13 @@ float: right;
 #js{
   width: 700px;
   float:right;
-  margin: 0px 20px 40px 20px;
+  margin: 10px 90px 20px 20px;
 }
 
 #js-bottom{
   width: 750px;
   float: left;
-  margin: 10px 20px 40px 70px;
+  margin: 10px 20px 20px 70px;
 }
 
 #task02{
@@ -94,10 +94,32 @@ float: right;
 
 #t03{
   width: 750px;
-  margin: 0px 20px 150px 70px;
+  margin: 300px 20px 150px 70px;
 }
 
+#css{
+  width: 400px;
+  float: left;
+  margin: 0px 99px 40px 70px
+}
 
+#csb{
+  width: 400px;
+  float: right;
+  margin: -1223px 795px 90px 500px;
+}
+
+#csl{
+  width: 400px;
+  float: right;
+  margin: -215px 1219px 40px -70px;
+}
+
+#desktop{
+  width: 700px;
+  float: right;
+  margin: -240px 90px 100px 70px
+}
 img{
   height: auto;
 }
