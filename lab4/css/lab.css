@@ -71,7 +71,7 @@ float: right;
 #js{
   width: 700px;
   float:right;
-  margin: 10px 90px 20px 20px;
+  margin: 10px 20px 20px 30px;
 }
 
 #js-bottom{
@@ -89,18 +89,19 @@ float: right;
 #html{
   width: 700px;
   float: right;
-  margin: 0px 20px 90px 70px;
+  margin: 30px 20px 90px 70px;
 }
 
-#t03{
-  width: 750px;
-  margin: 300px 20px 150px 70px;
+#desktop{
+  width: 700px;
+  float: right;
+  margin: 10px 20px 100px 90px;
 }
 
 #css{
   width: 400px;
   float: left;
-  margin: 0px 99px 40px 70px
+  margin: 0px 99px 40px 70px;
 }
 
 #csb{
@@ -112,13 +113,23 @@ float: right;
 #csl{
   width: 400px;
   float: right;
-  margin: -215px 1219px 40px -70px;
+  margin: -215px 1219px 0px -90px;
 }
 
-#desktop{
+#html{
   width: 700px;
   float: right;
-  margin: -240px 90px 100px 70px
+  margin: -1100px 20px 10px 70px;
+}
+
+#before{
+  width: 755px;
+  margin: 375px -100px 0px 0px;
+}
+
+#after{
+  width: 755px;
+  margin: 0px 20px 150px 500px;
 }
 img{
   height: auto;
