@@ -4,6 +4,12 @@
   margin: 20px 0px 10px 30px;
 }
 
+#js {
+  width: 400px;
+  float: right;
+  margin: 20px 150px 10px 0px;
+}
+
 img{
   height: auto;
 }
