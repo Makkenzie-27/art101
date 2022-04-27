@@ -7,13 +7,12 @@
 
 // nameSorter - a function that takes user input and sorts the letters of their
 //name.
-function nameSorter(){
-  //collects the users name with a comment
-  var userName = window.prompt("Please give me your name.");
-  document.writeln("<b>"+userName +" </b>Nice name! <br>");
+function nameSorter(u){
+  //prints the users input
+  document.writeln("<b>"+ u +" </b>Nice name! <br>");
 
   //split string array: makes the name into an array and prints the result
-  var splitArray = userName.split('');
+  var splitArray = u.split('');
   document.writeln("Here's the plan. We're going to split up the name you gave us: "+splitArray+"<br>");
 
   //sort the array we split
@@ -28,5 +27,6 @@ function nameSorter(){
 
 
 //Output
+var userName = window.prompt("Please give me your name.");
 document.writeln("There you go your name is now: " ,
-  nameSorter(), "</br>");
+  nameSorter(userName), "</br>");
