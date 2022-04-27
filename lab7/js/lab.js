@@ -30,5 +30,5 @@ function nameSorter(u){
 
 //Output
 var userName = window.prompt("Please enter your name:");
-document.writeln("There you go your name is now: " +"<b>",
+document.writeln("There you go! Your name is now: " +"<b>",
   nameSorter(userName), "</b></br>");
