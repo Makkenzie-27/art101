@@ -28,7 +28,7 @@ var result = aNumberArray.map(function(x){
 })
 
 //results of dividing by 2
-console.log("Lets divide our new numbers by 2: ", result);
+console.log("Results after dividing our array by 2: ", result);
 
 //Task X Bonus: Output
 //var outputEl = document.getElementById("Output Results");
