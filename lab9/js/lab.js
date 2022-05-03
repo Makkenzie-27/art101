@@ -20,7 +20,7 @@ new1El.style.fontSize = "35pt";
 
 //creating a secind new element and assigning it to a new variable.
 var new2El = document.createElement("p");
-new2El.innerHTML = "say something else";
+new2El.innerHTML = "new2El: " + "<bre>" + "say something else </br>";
 
 
 //edits to the new element text
@@ -35,11 +35,9 @@ outputEl.appendChild(new2El);
 
 // added a new element to the top of an elment. added children ontop of outputEl.
 var xBonus = document.createElement("p");
-xBonus.innerHTML = "Testing Testing";
+xBonus.innerHTML = "X Bonus Task 1";
 outputEl.insertBefore(xBonus, outputEl.children[0]);
-
-//Changed the color of the body
-document.body.style.backgroundColor = "LightSalmon";
+xBonus.style.fontSize = "30pt";
 
 //edited the main header
 document.getElementById("mainHeader").style.fontFamily = "Papyrus, fantasy";
