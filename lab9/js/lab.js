@@ -6,7 +6,7 @@
  */
 
 //using getElementById to find my output <div> in the HTML
-var outputEL = document.getElementById("output");
+var outputEl = document.getElementById("output");
 
 //creating a new element and assigning it to a new variable.
 var new1El = document.createElement("p");
@@ -29,9 +29,23 @@ new2El.style.fontSize = "40pt";
 
 
 //appending both elements separetly.
-outputEL.appendChild(new1El);
-outputEL.appendChild(new2El);
+outputEl.appendChild(new1El);
+outputEl.appendChild(new2El);
 
+
+// added a new element to the top of an elment. added children ontop of outputEl.
+var xBonus = document.createElement("p");
+xBonus.innerHTML = "Testing Testing";
+outputEl.insertBefore(xBonus, outputEl.children[0]);
+
+//Changed the color of the body
+document.body.style.backgroundColor = "LightSalmon";
+
+//edited the main header
+document.getElementById("mainHeader").style.fontFamily = "Papyrus, fantasy";
+
+//edits the header challenges
+document.getElementById("challenges").style.fontFamily = "Papyrus, fantasy";
 
 //Changes to my <div> output
 document.getElementById("output").style.color = "DarkSlateGray";
@@ -40,6 +54,4 @@ document.getElementById("output").style.backgroundColor = "LightCyan";
 //Changes to my <div> content
 document.getElementById("content").style.color = "SteelBlue";
 document.getElementById("content").style.backgroundColor = "Snow";
-
-//Changed the color of the body
-document.body.style.backgroundColor = "LightSalmon";
+document.getElementById("content").style.fontFamily = "Papyrus, fantasy";

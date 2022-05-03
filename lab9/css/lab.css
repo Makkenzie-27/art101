@@ -2,6 +2,8 @@ html, body {
   font-family: Copperplate, fantasy;
   font-size: 15px;
   line-height: 1.5;
+  color: #000000;
+  background-color: #FFA07A;
 }
 
 body{
@@ -20,6 +22,11 @@ body{
   background-color: #FFFAF0;
 }
 
+#mainHeader {
+  font-family: Papyrus, fantasy;
+}
+
+
 #output{
   border: solid 1px #FFB6C1;
   padding-left: 20px;
@@ -32,6 +39,7 @@ body{
 }
 
 h1{
+    font-family: Papyrus, fantasy;
     text-decoration: underline;
     text-align: center;
 }
@@ -46,6 +54,6 @@ h2{
 
 
 p{
-  font-size: 17px;
+  font-size: 20px;
   text-align:center;
-} 
+}
