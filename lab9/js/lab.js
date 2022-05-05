@@ -1,7 +1,7 @@
 /*
  *Author: Makkenzie Zepeda
- *Created: April 30, 2022
- *Lab08: Anon Functions and Callbacks
+ *Created: May 3, 2022
+ *Lab09: JavaScript for the Web
  *License: Public Domain
  */
 

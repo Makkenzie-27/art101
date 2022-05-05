@@ -13,24 +13,7 @@
   text-align: center;
 }
 
-#user-name{
-  font-size: 26px;
-  font-family: Papyrus, fantasy;
-  font-weight: bold;
-  text-align: left;
-  text-decoration: underline;
-  
-  border: solid 1px #FFB6C1;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  width: 95%;
-  margin: 20px;
-  margin-bottom: 5px;
-  background-color: #FFFAF0;
-}
-
-#output{
+#user-name, #output{
   font-size: 26px;
   font-family: Papyrus, fantasy;
   font-weight: bold;
@@ -46,6 +29,7 @@
   margin-bottom: 5px;
   background-color: #FFFAF0;
 }
+
 
 
 h1{
@@ -54,6 +38,7 @@ h1{
   text-align: center;
   text-decoration: underline;
 }
+
 h2{
   font-size: 26px;
   font-weight: bold;
