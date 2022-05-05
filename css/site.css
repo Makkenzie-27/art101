@@ -28,12 +28,12 @@ p {
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5{
   font-family: Papyrus, fantasy;
   font-weight: bold;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5{
   font-size: 30px;
   display: block;
   margin-block-start: 0.60em;
@@ -51,10 +51,14 @@ h1 {
 }
 
 h2 {
-
+  
   text-align: center;
-
 }
+
+h5{
+  text-decoration: underline;
+}
+
 
 .education{
   margin-bottom: 3px;
