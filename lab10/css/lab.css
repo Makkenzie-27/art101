@@ -9,25 +9,10 @@
   background-color: #FFFAF0;
 }
 
-#return{
-  text-align: center;
-}
-
-#output{
-  font-size: 17px;
-  border: solid 1px #FFB6C1;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  width: 95%;
-  margin: 20px;
-  margin-bottom: 5px;
-  background-color: #FFFAF0;
-}
-
 #header{
   text-align: center;
 }
+
 
 h1{
   font-size: 30px;
