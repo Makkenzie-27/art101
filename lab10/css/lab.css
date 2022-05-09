@@ -35,7 +35,7 @@
   font-family: Papyrus, fantasy;
   font-weight: bold;
   text-align: center;
-  text-decoration: underline;
+
   border: solid 1px #FFB6C1;
   padding-left: 0px;
   padding-right: 20px;
@@ -46,6 +46,16 @@
   width: 200px;
   height: 20px;
 
+}
+
+#js {
+  width: 400px;
+  float: right;
+  margin: 20px 150px 10px 0px;
+}
+
+img{
+  height: auto;
 }
 
 
