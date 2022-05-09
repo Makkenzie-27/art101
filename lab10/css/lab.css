@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-#user-name{
+#user-name, #anegram{
   font-size: 26px;
   font-family: Papyrus, fantasy;
   font-weight: bold;
@@ -30,7 +30,7 @@
   background-color: #FFFAF0;
 }
 
-#output{
+#output, #annOutput{
   font-size: 26px;
   font-family: Papyrus, fantasy;
   font-weight: bold;
@@ -48,10 +48,14 @@
 
 }
 
-#js {
+#js, #js02{
   width: 400px;
   float: right;
   margin: 20px 150px 10px 0px;
+}
+
+#js02{
+  height: 200px;
 }
 
 img{
@@ -59,7 +63,7 @@ img{
 }
 
 
-h1{
+h1, h2{
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -68,9 +72,9 @@ h1{
 
 h2{
   font-size: 26px;
-  font-weight: bold;
+
   text-align: left;
-  text-decoration: underline;
+
 }
 
 
