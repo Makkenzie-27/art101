@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-#user-name, #output{
+#user-name{
   font-size: 26px;
   font-family: Papyrus, fantasy;
   font-weight: bold;
@@ -30,6 +30,23 @@
   background-color: #FFFAF0;
 }
 
+#output{
+  font-size: 26px;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  border: solid 1px #FFB6C1;
+  padding-left: 0px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+
+  background-color: #FFF0F5;
+  width: 200px;
+  height: 20px;
+
+}
 
 
 h1{
