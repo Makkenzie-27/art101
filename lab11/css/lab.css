@@ -1,3 +1,4 @@
+
 #main-header {
   border: solid 1px #FFB6C1;
   padding-left: 20px;
@@ -34,22 +35,12 @@
   margin: 20px;
   margin-bottom: 5px;
   background-color: #FFFAF0;
-
-}
-.sectionbox {
-  border: solid 5px black;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
-  margin: 10px 10px 10px 10px;
 }
 
-.special {
-  background-color: #fdf7ed;
-  border: solid 1px maroon;
-}
-
-.hoverColor{
-  background-color: aqua;
+#text{
+  text-decoration: none;
+  font-family: Copperplate, fantasy;
+  font-size: 17px;
 }
 
 h1, h2{
@@ -70,4 +61,82 @@ h2{
 p{
   font-size: 17px;
   text-align:left;
+}
+
+/*Default value of box  */
+
+.sectionbox {
+  background-color: lavender;
+  border: solid 2px CornflowerBlue;
+  border-radius: 10px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  font-size: 100%;
+  color: Brown;
+  font-family: "Garamond", sans-serif;
+}
+
+/*special character: changes the box style after button is pressed */
+.special {
+  background-color: azure;
+  border: solid 5px #7FFFD4 ;
+}
+
+/*When you hover over the buttons it will change to these colors: */
+
+.hoverOne{                    /*Challenge*/
+  background-color: aqua;
+  border-color: BurlyWood;
+  color: DarkCyan;
+}
+
+.hoverTwo{                    /*Problem*/
+  background-color: PowderBlue;
+  border-color: RoyalBlue;
+  color: RoyalBlue;
+}
+
+.hoverThree{                  /*Results*/
+  background-color: DarkCyan;
+  border-color: Crimson;
+  color: DarkSalmon;
+}
+
+/*Changes the button color and the box it is in*/
+
+.changeOne{                             /*Challenge*/
+  background-color: lightSalmon;
+  color: Brown;
+}
+
+.buttonOne{
+  background-color: LightPink;
+  border-color: Maroon;
+  color: Maroon;
+}
+
+
+.changeTwo{                             /*Problem*/
+  background-color: Aquamarine;
+  border-color: MidnightBlue;
+  color: MidnightBlue;
+}
+
+.buttonTwo{
+  background-color: DarkSeaGreen;
+  border-color: Cornsilk;
+  color: azure;
+}
+
+
+.changeThree{                           /*Results*/
+  background-color: DarkSeaGreen;
+  border-color: DarkGreen;
+  color: DarkGreen;
+}
+
+.buttonThree{
+  background-color: springGreen;
+  border-color: darkGreen;
+  color:  DarkGreen;
 }
