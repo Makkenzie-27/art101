@@ -66,7 +66,7 @@ p{
 /*Default value of box  */
 
 .sectionbox {
-  background-color: lavender;
+  background-color: LavenderBlush;
   border: solid 2px CornflowerBlue;
   border-radius: 10px;
   margin: 5px 5px 5px 5px;
@@ -76,18 +76,13 @@ p{
   font-family: "Garamond", sans-serif;
 }
 
-/*special character: changes the box style after button is pressed */
-.special {
-  background-color: azure;
-  border: solid 5px #7FFFD4 ;
-}
 
 /*When you hover over the buttons it will change to these colors: */
 
 .hoverOne{                    /*Challenge*/
-  background-color: aqua;
-  border-color: BurlyWood;
-  color: DarkCyan;
+  background-color: Aquamarine;
+  border-color: DarkBlue;
+  color: DarkBlue;
 }
 
 .hoverTwo{                    /*Problem*/
@@ -99,14 +94,15 @@ p{
 .hoverThree{                  /*Results*/
   background-color: DarkCyan;
   border-color: Crimson;
-  color: DarkSalmon;
+  color: Crimson;
 }
 
 /*Changes the button color and the box it is in*/
 
 .changeOne{                             /*Challenge*/
-  background-color: lightSalmon;
-  color: Brown;
+  background-color: Plum;
+  border-color: indianred;
+  color: ivory;
 }
 
 .buttonOne{
@@ -132,7 +128,7 @@ p{
 .changeThree{                           /*Results*/
   background-color: DarkSeaGreen;
   border-color: DarkGreen;
-  color: DarkGreen;
+  color: DarkSlateGrey;
 }
 
 .buttonThree{

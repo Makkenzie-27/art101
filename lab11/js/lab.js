@@ -50,7 +50,7 @@ $("#r-button").click(function(){
 //X Bonus Task:
 
 $("#bonus-button").hover(function(){
-  $("#bonus-button").toggleclass("buttonFour")
+  $("#bonus-button").toggleclass("hoverFour");
 })
 $("#bonus-button").click(function(){
   $(":button").toggleClass("buttonOne");
