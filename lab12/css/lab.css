@@ -29,6 +29,12 @@ p{
   background-color: #FFFAF0;
 }
 
+#houses{
+  width: 130px;
+  float: right;
+  margin: 5px 225px 10px 30px;
+}
+
 #return{
   font-size: 20px;
   text-align: center;
