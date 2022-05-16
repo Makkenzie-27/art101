@@ -42,7 +42,6 @@ p{
 
   font-size: 26px;
   font-family: Papyrus, fantasy;
-  font-weight: bold;
   text-align: left;
   text-decoration: underline;
 
@@ -56,29 +55,40 @@ p{
   background-color: #FFFAF0;
 }
 
+#output{
+  font-size: 26px;
+  font-family: Papyrus, fantasy;
+  text-align: center;
+  border: solid 1px #FFB6C1;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: #FFF0F5;
+  height: 20px;
+}
+
+#output2{
+  font-size: 26px;
+  font-family: Papyrus, fantasy;
+  font-weight: bold;
+  text-align: center;
+  border: solid 1px #FFB6C1;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: #FFF0F5;
+}
+
+#descriptions{
+  text-align: center;
+}
+
+
 .input-output {
-  border: solid 1px #333333;
-    border-top-color: rgb(51, 51, 51);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: rgb(51, 51, 51);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-color: rgb(51, 51, 51);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgb(51, 51, 51);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    
-  padding: 10px 10px 30px;
-      padding-top: 10px;
-      padding-right: 10px;
-      padding-bottom: 30px;
-      padding-left: 10px;
+  background-color: PowderBlue;
+  font-weight: bold;
+  border: solid 3px pink;
+  padding: 10px 10px 30px
 }
