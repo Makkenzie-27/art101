@@ -1,11 +1,11 @@
-h1, h2{
+h1, h2, h3{
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   text-decoration: underline;
 }
 
-h2{
+h2, h3{
   font-size: 26px;
 
   text-align: left;
@@ -27,7 +27,19 @@ p{
   background-color: #FFFAF0;
 }
 
+#header{
+  text-align: center;
+}
+
+
 #return{
   font-size: 20px;
   text-align: center;
+}
+
+#output{
+  font-size: 26px;
+  font-family: Papyrus, fantasy;
+  text-align: center;
+  columns: 50px 6;
 }
