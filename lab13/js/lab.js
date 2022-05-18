@@ -8,102 +8,67 @@
 
 /*Create a FizzBuzz function that loops throught numbers 1 to 200*/
 /*Make it so the output of your program appears in your output div.*/
-function fizzBuzzBoom(){
+function mod(total, valOne, valTwo, valThr, valFour, a, b, c, d){
 
-  var fbb = "";
-  for (var i=1; i <= 200; i++){
 
-     if ((i % 3 == 0)&&(i % 5 == 0)&&(i % 7 == 0)&&(i % 8 == 0)){
-       console.log("FizzBuzzBoomBang");
-       fbb += (i + " FizzBuzzBoomBang!<br><br>");
-     }
+  var str = "";
+  for(let i = 0; i <= total ;i++){
+    if ((i % valOne == 0)&&(i % valTwo == 0)&&(i % valThr == 0)&&(i % valFour == 0)){
+      str += (i +" "+a+b+c+d+"<br>");
 
-     else if (i % 3 == 0){
-       console.log("Fizz");
-       fbb += (i + " Fizz!<br><br>");
-     }
+    } else if ((i % valOne == 0)&&(i % valTwo == 0)&&(i % valThr == 0)){
+      str += (i +" "+a+b+c+"<br>");
+    } else if ((i % valOne == 0)&&(i % valTwo == 0)&&(i % valFour == 0)){
+      str += (i +" "+a+b+d+"<br>");
+    } else if ((i % valOne == 0)&&(i % valThr == 0)&&(i % valFour == 0)){
+      str += (i +" "+a+c+d+"<br>");
+    } else if ((i % valTwo == 0)&&(i % valThr == 0)&&(i % valFour == 0)){
+      str += (i +" "+b+c+d+"<br>");
 
-     else if ((i % 3 == 0)&&(i % 5 == 0)){
-       console.log("FizzBuzz");
-       fbb += (i + " FizzBuzz!<br><br>");
-     }
+    } else if ((i % valOne == 0)&&(i % valTwo == 0)){
+      str += (i +" "+a+b+"<br>");
+    } else if ((i % valOne == 0)&&(i % valThr == 0)){
+      str += (i +" "+a+c+"<br>");
+    } else if ((i % valOne == 0)&&(i % valFour == 0)){
+      str += (i +" "+a+d+"<br>");
+    } else if ((i % valTwo == 0)&&(i % valThr == 0)){
+      str += (i +" "+b+c+"<br>");
+    } else if ((i % valTwo == 0)&&(i % valFour == 0)){
+      str += (i +" "+b+d+"<br>");
+    } else if ((i % valThr == 0)&&(i % valFour == 0)){
+      str += (i +" "+c+d+"<br>");
 
-     else if ((i % 3 == 0)&&(i % 7 == 0)){
-       console.log("FizzBoom");
-       fbb += (i + " FizzBoom!<br><br>");
-     }
+    } else if (i % valOne == 0){
+      str += (i +" "+a+"<br>");
+    } else if (i % valTwo == 0){
+      str += (i +" "+b+"<br>");
+    } else if (i % valThr == 0){
+      str += (i +" "+c+"<br>");
+    } else if (i % valFour == 0){
+      str += (i +" "+d+"<br>");
 
-     else if ((i % 3 == 0)&&(i % 8 == 0)){
-       console.log("FizzBang");
-       fbb += (i + " FizzBang!<br><br>");
-     }
-
-     else if (i % 5 == 0){
-       console.log("Buzz");
-       fbb += (i + " Buzz!<br><br>");
-     }
-
-     else if ((i % 5 == 0)&&(i % 3 == 0)){
-       console.log("BuzzFizz");
-       fbb += (i + " BuzzFizz!<br><br>");
-     }
-
-     else if ((i % 5 == 0)&&(i % 7 == 0)){
-       console.log("BuzzBoom");
-       fbb += (num + " BuzzBoom!<br><br>");
-     }
-
-     else if ((i % 5 == 0)&&(i % 8 == 0)){
-       console.log("BuzzBang");
-       fbb += (i + " BuzzBang!<br><br>");
-     }
-
-     else if (i % 7 == 0){
-       console.log("Boom");
-       fbb += (i + " Boom!<br><br>");
-     }
-
-     else if ((i % 7 == 0)&&(i % 3 == 0)){
-       console.log("BoomFizz");
-       fbb += (i + " BoomFizz!<br><br>");
-     }
-
-     else if ((i % 7 == 0)&&(i % 5 == 0)){
-       console.log("BoomBuzz");
-       fbb += (i + " BoomBuzz!<br><br>");
-     }
-
-     else if ((i % 7 == 0)&&(i % 8 == 0)){
-       console.log("BoomBang");
-       fbb += (i + " BoomBang!<br><br>");
-     }
-
-     else if (i % 8 == 0){
-       console.log("Bang");
-       fbb += (i + " Bang!<br><br>");
-     }
-
-     else if ((i % 8 == 0)&&(i % 3 == 0)){
-       console.log("BangFizz");
-       fbb += (i + " BangFizz!<br><br>");
-     }
-
-     else if ((i % 8 == 0)&&(i % 5 == 0)){
-       console.log("BangBuzz");
-       fbb += (i + " BangBuzz!<br><br>");
-     }
-
-     else if ((i % 8 == 0)&&(i % 7 == 0)){
-       console.log("BangBoom");
-       fbb += (i + " BangBoom!<br><br>");
-     }
-
-     else {
-       console.log(i);
-       fbb += (i + "<br><br>");
-     }
- }
-  return fbb;
+    } else {
+      str += (i+"<br>");
+    }
+  }
+  return str;
 }
 
-outputEl = $("#output").append(fizzBuzzBoom);
+outputEl = $("#output");
+submitEl = $("#submit");
+
+submitEl.click(function(){
+  totalEl  = $("#max").val();
+  valOneEl = $("#num0").val();
+  valTwoEl = $("#num1").val();
+  valThrEl = $("#num2").val();
+  valFourEl= $("#num3").val();
+
+  textOneEl = $("#text0").val();
+  textTwoEl = $("#text1").val();
+  textThrEl = $("#text2").val();
+  textFourEl= $("#text3").val();
+
+  console.log(totalEl);
+  outputEl.html(mod(totalEl, valOneEl, valTwoEl, valThrEl, valFourEl, textOneEl, textTwoEl, textThrEl, textFourEl));
+})
