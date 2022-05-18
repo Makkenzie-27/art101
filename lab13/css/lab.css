@@ -39,7 +39,13 @@ p{
 
 #output{
   font-size: 26px;
-  font-family: Papyrus, fantasy;
+  font-family: Tahoma, sans-serif;
   text-align: center;
+  border: solid 1px #FFB6C1;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: #FFF0F5;
   columns: 50px 6;
 }
