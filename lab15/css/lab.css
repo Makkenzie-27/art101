@@ -60,6 +60,8 @@ p{
   font-size: 26px;
   font-family: Papyrus, fantasy;
   text-align: center;
+  text-decoration: none;
+
   border: solid 1px #FFB6C1;
   margin-top: 10px;
   padding-left: 5px;
