@@ -19,6 +19,19 @@
   text-align: center;
 }
 
+#homepage{
+  font-size: 26px;
+
+  border: solid 1px #FFB6C1;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  width: 95%;
+  margin: 20px;
+  margin-bottom: 5px;
+  background-color: #FFFAF0;
+}
+
 #output{
   text-align: center;
   border: solid 1px #5F9EA0;
