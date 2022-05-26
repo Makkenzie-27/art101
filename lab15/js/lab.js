@@ -31,37 +31,40 @@ function getAjax() {
   })
 }
 
-$("button").click(getAjax);
+$("#activate").click(getAjax);
 
 
- // // var endpoint = "http://numbersapi.com/42/";
- // // var endpoint = "https://xkcd.com/info.0.json";
- // var endpoint = "https://api.nasa.gov/planetary/apod";
- //
- // function getAjax() {
- // 	$.ajax({
- //   	url: endpoint,
- //     type: "GET",
- //     data: {
- //     	api_key: "0JpHHNGBd500KLTVOjR6w3nq4AOVP3kSsvzZtgxK",
- //       count: 1
- //     }
- //   })
- //   .done(function(data){
- //   	console.log("Worked!");
- //     var firstAPOD = data[0];
- //     console.log(firstAPOD);
- //     var title = firstAPOD.title;
- //     var descr = firstAPOD.explanation;
- //     var imgUrl = firstAPOD.url;
- //     console.log(title, descr, imgUrl);
- //   	$("#output").html("<h3>" + title + "</h3>");
- //   	$("#output").append("<img src=" + imgUrl + ">");
- //   	$("#output").append("<p>" + descr + "</p>");
- //   })
- //   .fail(function(request, error){
- //   	$("#output").html("Something fucked up.");
- //   })
- // }
 
- //$("button").click(getAjax);
+//Bonus Task
+//NASA's Picture of the Day
+// var endpoint = "http://numbersapi.com/42/";
+// var endpoint = "https://xkcd.com/info.0.json";
+var nasaEndpoint = "https://api.nasa.gov/planetary/apod";
+
+function getNasaAjax() {
+	$.ajax({
+  	url: nasaEndpoint,
+    type: "GET",
+    data: {
+    	api_key: "0JpHHNGBd500KLTVOjR6w3nq4AOVP3kSsvzZtgxK",
+      count: 1
+    }
+  })
+  .done(function(data){
+  	console.log("Worked!");
+    var pAPOD = data[0];
+    console.log(pAPOD);
+    var title = pAPOD.title;
+    var descr = pAPOD.explanation;
+    var imgUrl = pAPOD.url;
+    console.log(title, descr, imgUrl);
+  	$("#output2").html("<h3>" + title + "</h3>");
+  	$("#output2").append("<img src=" + imgUrl + ">");
+  	$("#output2").append("<p>" + descr + "</p>");
+  })
+  .fail(function(request, error){
+  	$("#output2").html("Something fucked up.");
+  })
+}
+
+$("#APOD").click(getNasaAjax);
