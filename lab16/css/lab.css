@@ -43,6 +43,33 @@
   width: inherit;
 }
 
+ul{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li{
+  text-align: -webkit-match-parents;
+}
+
+ul.comicNav li a{
+  background-color: #6E7B91;
+  color: #FFF;
+  border: 1.5px solid #333;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1.5px 12px;
+  margin: 0 4px;
+  text-decoration: none;
+}
+ul.comicNav{
+  padding-left: 0px;
+  list-style-type: none;
+}
 h1, h2{
   font-size: 30px;
   font-weight: bold;
