@@ -23,13 +23,13 @@
 
       <h2>Challenges:</h2>
         <p>
-					This lab was very confusing. The examples given with the website we
-					had to also work with did not work. Figuring out how to get the API to
-					work was challenging. When applying differnt endpoints in the JS for the
-					website we were supposed to work with, nothing was able to print due to the site
-					itself being blocked. My partner and I also installed the extensions
-					Wes suggested and that still did not work. API's alone are still a challenge.
-
+					This lab was very confusing. Only because we knew we had the correct
+					code and when checking the console we could not find any major errors.
+					The challenging part was figuring out why our endpoint was not working
+					and why the page itself was being blocked even with the extension Wes
+					provided for getting past CORE blocks. We kept turning the extensions on
+					and off. We understood how to do lab 15 after reviewing, so we were not
+					sure why we could not get this lab to work.
         </p>
 
 
@@ -37,14 +37,18 @@
         <p>
 					My partner and I ran into a problem of not being able to figure out
 					how to get the comic site to no longer being blocked. We felt like no
-					matter what we tried nothing would work.
+					matter what we tried nothing would work. We knew our objects were being
+					called properly and that our endpoint was correct. However, the CORE
+					block was the  main problem we faced. Even during the lecture we still
+					were unsure why our code was not showing on our page.
         </p>
 
       <h2>Results:</h2>
         <p>
-					We were not able to complete the assignment but will be asking for help
-					during the next lecture. My failure message prints out due to the site
-					being blocked. 
+					We were finally able to complete the assignment after we discovered
+					another way google chrome makes sure you have an extension working. We
+					finally got the core extension to work and magically the API finally Worked
+					as well.
         </p>
 
 
@@ -55,18 +59,14 @@
     <div id="homepage">
     	<h2> Output </h2>
 
-            <button id="activate">Click to Decide</button>
+            <button id="activate">Click To See A Comic</button>
 
             <div id="output"></div>
-            <ul class="comicNav">
-              <li>
-              <a rel="prev" href="/124/" accesskey="p">&lt; Prev</a>
-              </li>
 
-              <li>
-                <a rel="next" href="/126/" accesskey="n">Next &gt;</a>
-              </li>
-            </ul>
+						<div id="pn">
+              <button class="button" id="previous">Previous</button>
+							<button class="button" id="next">Next</button>
+            </div>
     	</div>
 
 

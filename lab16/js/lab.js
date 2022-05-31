@@ -7,9 +7,10 @@
 
 
 
- var endpoint = "https://xkcd.com/125/";
+ var endpoint = "https://xkcd.com/info.0.json";
+ var issueNum = 0;
 
- function getAjax() {
+ function getAndPutData() {
  	$.ajax({
    	  url: endpoint,
       dataType: 'json',
@@ -19,35 +20,31 @@
    })
    .done(function(data){
    	console.log("Worked!");
-     var month = data.month;
-     var num = data.num;
-     var link = data.link;
-     var year = data.year;
-     var news = data.news;
-     var safe_title = data.safe_title;
-     var transcript = data.transcript;
-     var alt = data.alt;
-     var img = data.img;
-     var title = data.title;
-     var day = data.day;
+    outputEl = $("#output");
+    issueNum = data.num;
 
-     console.log(month, num, link, year, news, safe_title, transcript);
-   	$("#output").append("<h3>" + month + "</h3>");
-   	$("#output").append("<img src=" + img + ">");
-    $("#output").append("<h3>" + num + "</h3>");
-    $("#output").append("<h3>" + link + "</h3>");
-    $("#output").append("<h3>" + year + "</h3>");
-    $("#output").append("<h3>" + news + "</h3>");
-    $("#output").append("<h3>" + safe_title + "</h3>");
-    $("#output").append("<h3>" + transcript + "</h3>");
-    $("#output").append("<h3>" + alt + "</h3>");
-    $("#output").append("<h3>" + title + "</h3>");
-    $("#output").append("<h3>" + day + "</h3>");
 
-   })
+    outputEl.html("<h1 class='inOutput'>"+data.title+"</h1>");
+    outputEl.append("<img src='"+ data.img +"' class='imgOutput'/>");
+    outputEl.append("<p class='inOutput'>"+data.alt+"</p>");
+    outputEl.append("<p class='inOutput'>Date: "+data.month+"/"+data.day+"/"+data.year+"</p>");
+    outputEl.append("<p class='inOutput'>Issue Number: "+data.num+"</p>");
+  })
+
    .fail(function(request, error){
    	$("#output").html("Ah Ah Ah, You Didn't Use the Magic Word");
    })
  }
 
- $("#activate").click(getAjax);
+ $("#activate").click(getAndPutData);
+
+ $('#previous').click(function(){
+   issueNum -=1;
+   endpoint = "https://xkcd.com/"+issueNum+"/info.0.json"
+   getAndPutData(endpoint);
+ })
+ $('#next').click(function(){
+   issueNum +=1;
+   endpoint = "https://xkcd.com/"+issueNum+"/info.0.json"
+   getAndPutData(endpoint);
+ })
